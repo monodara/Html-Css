@@ -16,7 +16,7 @@ Before that, I was a UI designer and had accumulated abundant experience in a va
 
 ---
 
-### Career goal & expectations for this full-stack programme
-My career aspiration is to grow into a software architect. I have been focusing on back-end development and now exploring more into fullstack development. Therefore, I am seeking opportunities of junior backend/fullstack developer. 
-
-While I believe Integrify would provide skills that are in need in Finnish job market, I hope the projects would be involved in real-world projects instead of simplified and/or simulated ones. 
+### Hobbies
+- Hiking
+- Cooking & Baking
+- Reading
