@@ -1,0 +1,87 @@
+body{
+    /* background-color: rgb(0, 42, 18); */
+    color: darkblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    padding: 1px;
+}
+header{
+    text-align: center;
+    padding-top: 1rem;
+}
+header h2{
+    color: aqua;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px outset lightgray;
+}
+/* introduction */
+#bio{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 7%;
+    align-items: center;
+    padding: 1.5rem;
+}
+.brief{
+    list-style: circle;
+    padding: 0.5rem;
+}
+#avatar{
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-image: url("../profile_photo_2024.jpg");
+    background-position: 50% 50%;
+    background-size: 160%;
+}
+address{
+    
+}
+.adrIcon{
+    width: 2rem;
+}
+
+/* tech stack */
+#techstack{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 1fr;
+}
+#techstack img{
+    height: 10rem;
+}
+#mysql-icon{
+    grid-column: 1/3;
+}
+#java_icon{
+    grid-column: 3/4;
+}
+#docker_icon{
+    grid-column: 4/7;
+}
+#javascript_icon{
+    grid-column: 1/2;
+}
+#python_icon{
+    grid-column: 2/3;
+}
+#tstext{
+    grid-column: 3/5;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#typescript_icon{
+    grid-column: 5/6;
+}
+#react_icon{
+    grid-column: 1/2;
+}
+#mongodb_icon{
+    grid-column: 2/5;
+}
+/* #react_icon{
+    grid-column: 1/2;
+} */
+
