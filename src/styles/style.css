@@ -1,5 +1,4 @@
 body{
-    /* background-color: rgb(0, 42, 18); */
     color: darkblue;
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
@@ -21,13 +20,15 @@ header h2{
     column-gap: 7%;
     align-items: center;
     padding: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 .brief{
     list-style: circle;
     padding: 0.5rem;
+    width: 100%;
 }
 #avatar{
-    width: 100%;
+    width: 90%;
     aspect-ratio: 1/1;
     border-radius: 50%;
     background-image: url("../profile_photo_2024.jpg");
@@ -35,53 +36,104 @@ header h2{
     background-size: 160%;
 }
 address{
-    
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-style: normal;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+address div a{
+    color: black;
+    text-decoration: none;
+}
+address div a:hover{
+    color: aqua;
+}
+
+.phone_number{
+    margin: 0px;
+}
+.adr_items{
+    display: flex;
+    align-items: center;
 }
 .adrIcon{
-    width: 2rem;
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-right: 1rem;
 }
 
 /* tech stack */
 #techstack{
+    width: 90%;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-auto-rows: 1fr;
+}
+.tech_icon_containers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
 }
 #techstack img{
-    height: 10rem;
-}
-#mysql-icon{
-    grid-column: 1/3;
-}
-#java_icon{
-    grid-column: 3/4;
-}
-#docker_icon{
-    grid-column: 4/7;
+    max-width: 100%;
 }
 #javascript_icon{
     grid-column: 1/2;
 }
-#python_icon{
-    grid-column: 2/3;
+#mongodb_icon{
+    grid-column: 2/5;
+    padding: 5%;
+    max-width: 90%;
 }
-#tstext{
-    grid-column: 3/5;
-    background-color: aqua;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#typescript_icon{
+#nodejs_icon{
     grid-column: 5/6;
 }
 #react_icon{
     grid-column: 1/2;
+    padding: 5%;
+    max-width: 90%;
 }
-#mongodb_icon{
-    grid-column: 2/5;
+#java_icon{
+    grid-column: 2/3;
 }
-/* #react_icon{
+#tstext{
+    grid-column: 3/7;
+    background-color:gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#python_icon{
     grid-column: 1/2;
+}
+#docker_icon{
+    grid-column: 2/5;
+    padding: 5%;
+    max-width: 90%;
+}
+/* #mysql-icon{
+    grid-column: 2/4;
+    padding: 10%;
+    max-height: 80%;
 } */
+#typescript_icon{
+    grid-column: 5/6;
+}
+#spring_icon,#azure_icon,#postgresql_icon{
+    padding: 10%;
+    max-width: 80%;
+    max-height: 80%;
+}
+#azure_icon{
+    background-color: rgb(0, 138, 215);
+}
+#azure_icon img{
+    filter: brightness(0) invert(1);
+}
+
 
