@@ -15,12 +15,14 @@ header h2{
 }
 /* introduction */
 #bio{
+    width: 90%;
     display: flex;
     justify-content: space-between;
     column-gap: 7%;
     align-items: center;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
+    border-bottom: 1px outset lightgray;
 }
 .brief{
     list-style: circle;
@@ -66,10 +68,12 @@ address div a:hover{
 
 /* tech stack */
 #techstack{
-    width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    border-bottom: 1px outset lightgray;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 .tech_icon_containers{
     width: 100%;
@@ -97,18 +101,22 @@ address div a:hover{
     padding: 5%;
     max-width: 90%;
 }
-#java_icon{
+#python_icon{
     grid-column: 2/3;
 }
+
 #tstext{
+    font-size: 1.5rem;
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
+    color: aliceblue;
     grid-column: 3/7;
-    background-color:gold;
+    background-color:coral;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
-#python_icon{
+#java_icon{
     grid-column: 1/2;
 }
 #docker_icon{
@@ -116,15 +124,10 @@ address div a:hover{
     padding: 5%;
     max-width: 90%;
 }
-/* #mysql-icon{
-    grid-column: 2/4;
-    padding: 10%;
-    max-height: 80%;
-} */
 #typescript_icon{
     grid-column: 5/6;
 }
-#spring_icon,#azure_icon,#postgresql_icon{
+#spring_icon,#azure_icon,#postgresql_icon,#scala_icon{
     padding: 10%;
     max-width: 80%;
     max-height: 80%;
@@ -132,8 +135,76 @@ address div a:hover{
 #azure_icon{
     background-color: rgb(0, 138, 215);
 }
-#azure_icon img{
+#azure_icon img,#postgresql_icon img,#scala_icon img{
     filter: brightness(0) invert(1);
 }
-
-
+#postgresql_icon{
+    background-color: #008bb9;
+}
+#scala_icon{
+    background-color: black;
+}
+/* education & training */
+#edu{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color: white;
+    border-bottom: 1px outset lightgray;
+    padding-bottom: 1.5rem;
+}
+.edu_containers{
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#edu_text{
+    background-color: darkcyan;
+    font-size: 150%;
+}
+#integrify{
+    background-color: forestgreen;
+    height: 100%;
+}
+#fitech{
+    background-color: mediumseagreen;
+    height: 100%;
+}
+#ucd{
+    background-color:yellowgreen;
+}
+#mu{
+    background-color: limegreen;
+}
+#training{
+    display: grid;
+    grid-template-rows: 1fr,1fr;
+}
+/* languages */
+#lang_text{
+    background-color: cadetblue;
+    padding: 0.3rem;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    width: auto;
+    margin-top: 1.5rem;
+}
+#lang_items{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.langs{
+    width: 100%;
+    text-align: center;
+    border-right: 1px solid darkgray;
+    border-left: 1px solid darkgray;
+}
+#lang{
+    border-bottom: 1px outset lightgray;
+    padding-bottom: 1.5rem;
+}
