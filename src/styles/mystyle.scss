@@ -10,17 +10,17 @@ body{
 header{
     text-align: center;
     padding-top: 1rem;
+    padding-bottom: 1.5rem;
 }
 h2{
-    color: aqua;
-    padding-bottom: 1.5rem;
-    /* border-bottom: 1px outset lightgray; */
+    color: coral;
+    margin-bottom: 1.5rem;
 }
 /* typing animation */
 h2 {
     overflow: hidden;
     display: inline-block;
-    border-right: 2px solid darkblue; /* Adjust the color of the typing cursor */
+    border-right: 1px solid darkblue; 
     white-space: nowrap;
     margin: 0;
     letter-spacing: 2px;
@@ -171,14 +171,8 @@ address div a:hover{
 }
 
 #tstext{
-    font-size: 1.5rem;
-    color: aliceblue;
+    @include mixins.title_text_style(coral, white);
     grid-column: 3/7;
-    background-color:coral;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
 }
 #java_icon{
     grid-column: 1/2;
@@ -219,15 +213,17 @@ address div a:hover{
 }
 .edu_containers{
     width: 100%;
-    /* aspect-ratio: 1/1; */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 #edu_text{
-    background-color: darkcyan;
-    font-size: 150%;
+    @include mixins.title_text_style(variables.$secondary-color, white);
+}
+#training{
+    display: grid;
+    grid-template-rows: 1fr,1fr;
 }
 #integrify{
     background-color: forestgreen;
@@ -241,17 +237,10 @@ address div a:hover{
 #mu{
     background-color: limegreen;
 }
-#training{
-    display: grid;
-    grid-template-rows: 1fr,1fr;
-}
 /* languages */
 #lang_text{
-    background-color: cadetblue;
+    @include mixins.title_text_style(variables.$secondary-color, white);
     padding: 0.3rem;
-    color: white;
-    text-align: center;
-    font-size: 1.5rem;
     width: auto;
     margin-top: 1.5rem;
 }
@@ -272,9 +261,8 @@ address div a:hover{
 }
 /* more */
 #more_text{
+    @include mixins.title_text_style(white, variables.$secondary-color);
     margin: 1.5rem;
-    font-size: 1.5rem;
-    text-align: center;
 }
 .hobby_container{
     display: flex;
@@ -291,23 +279,9 @@ address div a:hover{
     max-width: 100%;
     overflow: hidden;
 }
-.hobby_item{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#phg,#hike{
+    @include mixins.hobby_item_style(rgb(129, 209, 212));
 }
-.hobby_text{
-    width: 30%;
-}
-#phg{
-    background-color:khaki;
-}
-#hike{
-    background-color:khaki;
-}
-#jog{
-    background-color:lightpink;
-}
-#cook{
-    background-color:lightblue;
+#jog,#cook{
+    @include mixins.hobby_item_style(lightyellow);
 }
