@@ -11,8 +11,39 @@ header{
 header h2{
     color: aqua;
     padding-bottom: 1.5rem;
-    border-bottom: 1px outset lightgray;
+    /* border-bottom: 1px outset lightgray; */
 }
+/* typing animation */
+h2 {
+    overflow: hidden;
+    display: inline-block;
+    border-right: 2px solid darkblue; /* Adjust the color of the typing cursor */
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: 2px;
+    animation: typing 3s steps(40, end), blink-caret 0.8s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: darkblue; 
+    }
+  }
+
+
 /* introduction */
 #bio{
     width: 90%;
@@ -23,6 +54,7 @@ header h2{
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     border-bottom: 1px outset lightgray;
+    border-top: 1px outset lightgray;
 }
 .brief{
     list-style: circle;
@@ -85,6 +117,12 @@ address div a:hover{
 #techstack img{
     max-width: 100%;
 }
+#techstack img:hover{
+    transform: scale(0.95);
+}
+.hobby_item img:hover{
+    transform: scale(1.05);
+}
 #javascript_icon{
     grid-column: 1/2;
 }
@@ -107,7 +145,6 @@ address div a:hover{
 
 #tstext{
     font-size: 1.5rem;
-    /* font-family:Verdana, Geneva, Tahoma, sans-serif; */
     color: aliceblue;
     grid-column: 3/7;
     background-color:coral;
