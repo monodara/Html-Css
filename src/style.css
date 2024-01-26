@@ -65,7 +65,7 @@ h2 {
     width: 90%;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    background-image: url("../profile_photo_2024.jpg");
+    background-image: url("profile_photo_2024.jpg");
     background-position: 50% 50%;
     background-size: 160%;
 }
@@ -122,6 +122,30 @@ address div a:hover{
 }
 .hobby_item img:hover{
     transform: scale(1.05);
+}
+#eng::after{
+    content: "English";
+}
+#eng:hover::after{
+    content: "I love coding";
+}
+#chn::after{
+    content: "Chinese";
+}
+#chn:hover::after{
+    content: "我为编程而生";
+}
+#ger::after{
+    content: "German";
+}
+#ger:hover::after{
+    content: "Ich liebe Programmieren";
+}
+#fin::after{
+    content: "Finnish";
+}
+#fin:hover::after{
+    content: "Rakastan koodaamista";
 }
 #javascript_icon{
     grid-column: 1/2;
@@ -192,7 +216,7 @@ address div a:hover{
 }
 .edu_containers{
     width: 100%;
-    aspect-ratio: 1/1;
+    /* aspect-ratio: 1/1; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,11 +228,9 @@ address div a:hover{
 }
 #integrify{
     background-color: forestgreen;
-    height: 100%;
 }
 #fitech{
     background-color: mediumseagreen;
-    height: 100%;
 }
 #ucd{
     background-color:yellowgreen;
