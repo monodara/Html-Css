@@ -1,12 +1,12 @@
 {
-  "name": "week1-assignment",
+  "name": "integrify-fs17-week1",
   "version": "1.0.0",
-  "description": "Basic website",
+  "description": "This assignment aims to practice HTML, CSS and SASS",
   "main": "index.js",
-  "author": "andrea <ngocanhhsgs@gmail.com>",
-  "license": "MIT",
   "scripts": {
-    "compile": "sass src/styles/style.scss:src/style.css",
-    "compile:watch": "sass --watch src/styles/style.scss:src/style.css"
-  }
+    "compile": "sass src/styles/mystyle.scss:src/style.css",
+    "compile:watch": "sass --watch src/styles/mystyle.scss:src/style.css"
+  },
+  "author": "",
+  "license": "ISC"
 }
