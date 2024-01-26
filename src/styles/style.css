@@ -208,3 +208,44 @@ address div a:hover{
     border-bottom: 1px outset lightgray;
     padding-bottom: 1.5rem;
 }
+/* more */
+#more_text{
+    margin: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.hobby_container{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.hobby_container div{
+    width: 100%;
+    padding: 0.5rem;
+    justify-content: center;
+}
+.hobby_container img{
+    padding: 0.5rem;
+    max-width: 100%;
+    overflow: hidden;
+}
+.hobby_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hobby_text{
+    width: 30%;
+}
+#phg{
+    background-color:khaki;
+}
+#hike{
+    background-color:khaki;
+}
+#jog{
+    background-color:lightpink;
+}
+#cook{
+    background-color:lightblue;
+}
